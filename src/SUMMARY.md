@@ -4,5 +4,5 @@
 
 - [掌握 Linux: The Arch Way](./archos/why_archlinux.md)
     - [打造你的 ArchOS 主力机器]()
-    - [基础概念索引](./archos/basic_knowledge.d)
+    - [基础概念索引](./archos/basic_knowledged.md)
         - [Linux 系统的启动流程]()

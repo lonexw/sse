@@ -4,3 +4,8 @@ authors = ["lonexw"]
 language = "zh-CN"
 multilingual = true
 src = "src"
+
+# book.toml
+[output.html]
+site-url = "/mdBook/"
+
