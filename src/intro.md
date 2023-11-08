@@ -10,10 +10,19 @@
 
 在开始阅读之前，希望你对软件工程师有更准确的理解：
 
-- 什么是软件工程师：https://discuss.expound.cc/d/2
+- [什么是软件工程师?](https://discuss.expound.cc/d/2)
+
+### 在线阅读
+
+- [Read at My GitHub Pages](https://lonexw.github.io/sse-book/)
+- [Expound Note 述知笔记](https://discuss.expound.cc)
 
 ### 本地预览
 
 ```bash
 mdbook serve --open
 ```
+
+### 版权说明
+
+Each file included in this repository is licensed under the [CC BY License](https://github.com/lonexw/sse-book/blob/main/LICENSE).
