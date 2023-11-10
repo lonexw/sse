@@ -4,7 +4,7 @@
 
 - [基础：计算机科学]()
 - [掌握 Linux: The Arch Way](./master_linux.md)
-    - [打造你的 ArchOS 主力机器](./archos/why_archlinux.md)
+    - [打造 ArchOS 主力机器](./archos/why_archlinux.md)
         - [准备好引导安装的 U 盘](./archos/live_usb.md)
         - [个性化安装 Arch Linux](./archos/install_archlinux.md)
         - [基本的系统配置和应用](./archos/customize_archos.md)

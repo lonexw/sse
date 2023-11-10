@@ -57,9 +57,3 @@ Arch Linux 鼓励每一个用户[参与](https://wiki.archlinuxcn.org/wiki/Getti
 
 - Arch Wiki：https://wiki.archlinuxcn.org/wiki/
 - [archlinux 简明指南](https://arch.icekylin.online/guide/)
-
-
-
-
-
-

@@ -8,6 +8,8 @@
 4. 协作：代码与项目管理
 5. 解决问题：工程师思维
 
+> Tips: 这里需要一张手绘图说明内容架构和学习步骤。
+
 在开始阅读之前，希望你对软件工程师有更准确的理解：
 
 - [什么是软件工程师?](https://discuss.expound.cc/d/2)
@@ -28,4 +30,4 @@ mdbook serve --open
 
 ### 版权说明
 
-Each file included in this repository is licensed under the [CC BY License](https://github.com/lonexw/sse-book/blob/main/LICENSE).
+Each file included in this repository is licensed under the [CC BY License](https://gitee.com/lonexw/sse-book/raw/main/LICENSE).
