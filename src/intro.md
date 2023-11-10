@@ -23,6 +23,9 @@
 mdbook serve --open
 ```
 
+本书使用 mdBook 生成，使用前需安装好 [Rust](https://rustup.rs) 环境及 [mdBook](git@github.com:lonexw/sse-book.git)。
+
+
 ### 版权说明
 
 Each file included in this repository is licensed under the [CC BY License](https://github.com/lonexw/sse-book/blob/main/LICENSE).
