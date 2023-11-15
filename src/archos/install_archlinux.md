@@ -32,12 +32,12 @@ reflector --country china --protocol https --latest 5 --save /etc/pacman.d/mirro
 
 示例需求：将 Arch Linux 安装在一个 2TB 的固态移动硬盘中， 来规划分区方案：
 
-| Device    | 挂载点       | Size 空间 | 类型 Type          | 文件格式  | 备注                                                                                                                                                                                        |
-| --------- | --------- | ------- | ---------------- | ----- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| /dev/sda1 | /mnt/boot | 512M    | EFI System       | FAT32 | 引导分区， 至少 300M；如果打算安装多个内核， 或者双系统，最好预留 1GB 以上空间                                                                                                                                             |
-| /dev/sda2 | [SWAP]    | 32G     | Linux swap       | swap  | Linux 交换空间，把硬盘空间作为虚拟内存<br>通常为交换分区分配两倍内存大小的空间<br>考虑是否会使用休眠（挂起到硬盘）的功能                                                                                                                       |
-| /dev/sda3 | /mnt/     | 512G    | Linux filesystem | btrfs | 新的文件系统 Btrfs，支持写时复制（CoW）、快照以及压缩等高级特性。子卷划分：<br>-  / 根分区：主文件系统挂载， 必需。<br>- /home 独立分区：用户的配置和应用文件。<br>- /.snapshots: 备份快照文件数据存储分区。<br>- /var/log: 系统日志文件，单独分区存储。<br>- /var/cache:  下载的软件包缓存。 |
-| /dev/sda4 | /mnt/data | 剩余空间    | Linux filesystem | ext4  | 存放数据，跨操作系统的文件共享                                                                                                                                                                           |
+| Device    | 挂载点       | Size 空间 ｜ 类型 Type ｜ 文件格式                                                                                                                                                                                                                                                                                                                        |
+| --------- | --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| /dev/sda1 | /mnt/boot | 512M ｜ EFI System ｜ FAT32<br>引导分区， 至少 300M；如果打算**安装多个内核， 或者双系统**，最好预留 1GB 以上空间                                                                                                                                                                                                                                                                  |
+| /dev/sda2 | [SWAP]    | 32G ｜inux Swap｜swap<br>Linux 交换空间，把硬盘空间作为虚拟内存，通常为交换分区分配两倍内存大小的空间，考虑是否会**使用休眠（挂起到硬盘）**的功能                                                                                                                                                                                                                                                        |
+| /dev/sda3 | /mnt/     | 512G｜Linux filesystem ｜ btrfs<br>新的文件系统 [Btrfs](https://sspai.com/link?target=https%3A%2F%2Fbtrfs.wiki.kernel.org%2Findex.php%2FMain_Page)，支持**写时复制（CoW）、快照以及压缩等高级特性**。子卷划分：<br>-  **/ 根分区**：主文件系统挂载， 必需。<br>- **/home 独立分区**：用户的配置和应用文件。<br>- **/.snapshots**: 备份快照文件数据存储分区。<br>- **/var/log**: 系统日志文件，单独分区存储。<br>- **/var/cache**:  下载的软件包缓存。 |
+| /dev/sda4 | /mnt/data | 剩余空间 ｜Linux filesystem ｜ext4<br>存放数据，**跨操作系统**的文件共享                                                                                                                                                                                                                                                                                             |
 
 这里使用 **fdisk** 工具来执行分区， 也有其他工具可以完成该操作， 比如 [parted](https://wiki.archlinuxcn.org/wiki/Parted)、cfdisk、gdisk：
 
@@ -93,7 +93,7 @@ chattr +C /mnt/var/log /mnt/var/cache /mnt/.snapshots
 # 选择计算机的微码包, 提升 CPU 稳定性：intel-ucode or amd-ucode
 # 两个常用软件，方便后续操作：git、vim（文本编辑器，看个人喜好）
 # (可选) btrfs-progs 包含了很多用于管理 btrfs 文件系统的命令
-# 如果启动后只有无线网络可以使用，需要安装 iwctl 来验证登录 
+# 如果启动后只有无线网络可以使用，可以在这里提前安装 iwd 来验证登录 
 # pacstrap 会拷贝你的镜像站配置文件(/etc/pacman.d/mirrorlist)到新系统
 pacstrap -K /mnt base linux linux-firmware intel-ucode git vim btrfs-progs
 

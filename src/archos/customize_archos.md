@@ -1,5 +1,7 @@
 # 基础的系统配置和应用
 
+重启新安装好 Arch Linux 的电脑，用 root 账号登录进入终端环境：
+
 ### 配置有线和无线网络
 
 ```bash
@@ -168,6 +170,6 @@ systemctl hibernate
 - 系统维护： Arch 是滚动发行系统，软件包的更新速度很快，用户需要花些时间进行 [系统维护](https://wiki.archlinuxcn.org/wiki/System_maintenance)。
 - 如果你对系统安全很关注： [https://wiki.archlinux.org/title/Security](https://wiki.archlinux.org/title/Security)
 
-现在拥有了一个开机可用的 Arch Linux，可以手动创建快照，方便出问题随时回滚。
+现在我们拥有了一个开机可用的 Arch Linux，可以手动创建快照，方便出问题随时回滚。
 
 > 跟随阅读后续的内容完成**桌面环境、常见应用和开发环境**的配置工作。

@@ -53,3 +53,11 @@ ssh 远程安装：[https://wiki.archlinuxcn.org/wiki/%E9%80%9A%E8%BF%87_SSH_%E5
 [在可移动设备上安装 Arch Linux - Arch Linux 中文维基](https://wiki.archlinuxcn.org/wiki/%E5%9C%A8%E5%8F%AF%E7%A7%BB%E5%8A%A8%E8%AE%BE%E5%A4%87%E4%B8%8A%E5%AE%89%E8%A3%85_Arch_Linux)
 
 [linux 挂载usb 休眠状态 关闭-掘金](https://juejin.cn/s/linux%20%E6%8C%82%E8%BD%BDusb%20%E4%BC%91%E7%9C%A0%E7%8A%B6%E6%80%81%20%E5%85%B3%E9%97%AD)
+
+https://github.com/microsoft/inshellisense
+
+https://medium.com/@magda7817/sharded-does-not-imply-distributed-572fdafc4040
+
+https://www.lazyvim.org/installation
+
+https://store.kde.org/p/1350981
