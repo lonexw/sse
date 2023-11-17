@@ -25,3 +25,7 @@ Udacity的公开课《Applied Cryptography》适合快速入门，→ [讲义](h
 - 日本作家的科普书：[图解密码技术（第3版）](https://book.douban.com/subject/26822106/)
 
 PS：在这里忽略了两个很重要的部分：**网络知识和数据库**，不用担心，会在后面的部分出现。
+
+### 机器学习
+
+微软机器学习入门教程: https://github.com/microsoft/ML-For-Beginners

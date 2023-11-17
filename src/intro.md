@@ -31,3 +31,8 @@ mdbook serve --open
 ### 版权说明
 
 Each file included in this repository is licensed under the [CC BY License](https://gitee.com/lonexw/sse-book/raw/main/LICENSE).
+
+
+### 感谢
+
+- https://emoji.fly.dev/
