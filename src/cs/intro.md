@@ -63,3 +63,27 @@ CS50 每年都会开新的网络课程，如果你英文不错，可以考虑直
 - **csdiy.wiki** 一个北京大学信科专业同学在大三（2021 年）整理的一份**计算机自学指南**，如果你还是学生，想寻找同龄人一起组团学习，这里是不错的选择：[CS自学指南](https://csdiy.wiki/)
 - **CrashCouse** 计算机速成课系列视频，可以当成科普和学科概览视频：[【计算机科学速成课】[40集全/精校] ](https://www.bilibili.com/video/av21376839)
 - [0xFFFF](https://0xffff.one/p/2-0xffff-intro) 这是一个面向计算机爱好者的学习交流社区，发源于华南师大计算机学院，目前汇聚了一些来自各地高校、企业乃至于中小学的计算机爱好者们。
+
+[Linux C编程一站式学习](https://akaedu.github.io/book/index.html)
+
+[Stanford CS110L: Safety in Systems Programming - CS自学指南](https://csdiy.wiki/%E7%BC%96%E7%A8%8B%E5%85%A5%E9%97%A8/CS110L/)
+
+[Teach Yourself Programming in Ten Years](http://norvig.com/21-days.html)
+
+【视频】Hubris：为健壮性开发操作系统
+
+Hubris 是一个用于深度嵌入计算机系统的小型开源操作系统，例如：我们的服务器替代基板管理控制器（BMC，Baseboard Management Controller）。
+
+本次演讲将概述 Hubris 的设计、Hubris 应用程序的结构以及我们在此过程中学到的一些亮点。
+
+视频链接，[https://talks.osfc.io/osfc2021/talk/JTWYEH/](https://talks.osfc.io/osfc2021/talk/JTWYEH/)
+
+[Teach Yourself Programming in Ten Years](http://norvig.com/21-days.html)
+
+## 文章总结
+
+### 几本技术与人文的书籍推荐：
+
+禅与摩托车的维修艺术
+
+技术呆子

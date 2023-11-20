@@ -27,3 +27,15 @@ Josh Hug 据说是位“可爱”、人气非常高的讲师，不去了解一�
 题外话：如果你对如何解决本身缺乏思考，这本书说不定会让你茅塞顿开：[《怎样解题》](https://book.douban.com/subject/2124114/)
 
 如果是你为了面试准备或程序竞赛学习这部分内容，网络上应该有比较完备的资料，不作过多介绍。
+
+#### 编程竞赛的常见算法
+
+
+[编程竞赛的常见算法](https://cp-algorithms.com/graph/strongly-connected-components.html)（Algorithms for Competitive Programming）
+
+这是一本免费的英文电子书，逐一讲解编程竞赛里面常见的几十种算法，求职面试也用得到。
+
+[fasteR](https://github.com/matloff/fasteR)
+
+这个仓库是 R 语言学习教程，有大量示例。
+
