@@ -4,6 +4,7 @@
 
 首先简单了解下 Linux 中 **图形用户界面（GUI）** 的基本架构：
 
+- 显卡驱动（GPU）与硬件输入
 - Display Server 显示服务器（X11、Wayland、Mir）
 	- 桌面环境的基础，处理底层的绘图功能，。其他图形程序不直接在屏幕上绘图；相反，它们向显示服务器发送绘图请求，显示服务器为它们在屏幕上绘图
 		- 简而言之，为应用程序提供像素访问
@@ -41,6 +42,32 @@ LightDM：由 Ubuntu 为 Unity 桌面开发。
 X11很大程度上充当了客户端和窗口管理器之间的“一个非常糟糕的”通信协议
 
 https://ifmet.cn/posts/cab49185/
+
+The following desktop environments were tested with success
+
+awesome
+bspwm
+budgie
+cinnamon
+deepin
+dwm
+enlightenment
+gnome
+i3
+kde
+labwc
+lxde
+lxqt
+mate
+maxx
+pantheon
+qtile
+spectrwm
+sway
+windowmaker
+xfce
+xmonad
+Ly should work with any X desktop environment, and provides basic wayland support (sway works very well, for example).
 
 
 ### 屏幕定制

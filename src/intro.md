@@ -30,7 +30,7 @@ mdbook serve --open
 
 ### 版权说明
 
-Each file included in this repository is licensed under the [CC BY License](https://gitee.com/lonexw/sse-book/raw/main/LICENSE).
+Each file included in this repository is licensed under the [CC BY License](https://raw.githubusercontent.com/lonexw/sse-book/main/LICENSE).
 
 
 ### 感谢

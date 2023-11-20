@@ -35,6 +35,10 @@ Rust 之难，不在于语言特性，而在于：
 
 - Ownership * Borrowing
 
+在 Rust 中，main 线程的栈大小是 8MB，普通线程是 2MB，在函数调用时会在其中创建一个临时栈空间，调用结束后 Rust 会让这个栈空间里的对象自动进入 Drop 流程，最后栈顶指针自动移动到上一个调用栈顶，无需程序员手动干预，因而栈内存申请和释放是非常高效的。
+
+unsafe rust
+
 ### Type System
 
 - Immutability & Privacy By Default
@@ -45,11 +49,47 @@ Rust 之难，不在于语言特性，而在于：
 - Iterators & Combinators
 - Enums & Structs, user-defined types.
 
+Generic Types 泛型 & Trait & Lifetime
+
+Trait
+
+impl Trait for Struct， default impl
+
+Trait Object
+
+Assoacited Trait
+
+[进一步深入特征 - Rust语言圣经(Rust Course)](https://course.rs/basic/trait/advance-trait.html)
+
+
+
 ### Polymorphism
 
 - No Classical Inheritance
 - Traits
 - Generics
+
+# Functional Language Features: Iterators and Closures
+
+闭包可以从环境中捕获值，与函数接受参数的方式是完全一致的：获取所有权、可变借用及不可变借用，编码表现为 3 种 Trait：
+
+- ::FnOnce::：意味着闭包可以从它的封闭作用域中，也就是闭包所处的环境中，消耗捕获的变量。为了实现这一功能，闭包必须在定义时取得这些变量的所有权并将它们移动至闭包中，因为闭包**不能多次获取并消耗同一变量的所有权，所以只能被调用一次（Once）**。
+- ::FnMut::：可以从环境中可变地借用值并对它们进行修改。
+- ::Fn::：可以从环境中不可变地借用值。
+
+> 当你创建闭包时，Rust会基于闭包从环境中使用值的方式来自动推导出它需要使用的trait。所有闭包都自动实现了FnOnce，因为它们至少都可以被调用一次。那些不需要移动被捕获变量的闭包还会实现FnMut，而那些不需要对被捕获变量进行可变访问的闭包则同时实现了Fn。
+
+> 使用 **::move::** 关键字，强制闭包获取环境中值的所有权。
+
+### Iterator 迭代器
+
+在Rust中，迭代器是惰性的（layzy）。这也就意味着创建迭代器后，除非你主动调用方法来消耗并使用迭代器，否则它们不会产生任何的实际效果。
+
+> iter() | iter_into() | iter_mut()
+
+迭代器可以让开发者专注于高层的业务逻辑，而不必陷入编写循环、维护中间变量这些具体的细节中。
+
+
 
 ### Extensibility
 
@@ -64,7 +104,7 @@ Rust 之难，不在于语言特性，而在于：
 $ curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
 ```
 
-### 运行期初始化静态变量
+运行期初始化静态变量
 
 使用`lazy_static`在每次访问静态变量时，会有轻微的性能损失，因为其内部实现用了一个底层的并发原语`std::sync::Once`，在每次访问该变量时，程序都会执行一次原子指令用于确认静态变量的初始化是否完成
 
@@ -72,4 +112,114 @@ $ curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
 
 [Introduction - Learning Rust With Entirely Too Many Linked Lists](https://rust-unofficial.github.io/too-many-lists/index.html)
 
+# 代码质量管控
 
+## RCRG（Rust Code View Review Guidelines Rust ）代码审查指南
+
+[请求贡献｜Rust 代码审查指南](https://mp.weixin.qq.com/s/u0fmDYGbMDLfZaIOwSjPmw)
+
+[GitHub - ZhangHanDong/rust-code-review-guidelines: Rust Code Review Guidelines , RCRG](https://github.com/ZhangHanDong/rust-code-review-guidelines)
+
+### UI 框架
+
+- Makepad：https://mp.weixin.qq.com/s/BVJKlOdwmVi1a1NFrGN8Ng
+
+
+#### 关于 Rust 错误的信息,比你想知道的更多
+
+
+引用 Rust Book 中的话：“错误是软件生活中的一个事实”。这篇文章讲更细致地讨论如何处理它们。很值得一读
+
+
+- [https://www.shuttle.rs/blog/2022/06/30/error-handling](https://www.shuttle.rs/blog/2022/06/30/error-handling)
+
+# 尝试一下 Try Rust + Go + NODEJS（React components + Redux + TypeScript + Vue）
+
+一个非常简单的例子，访问数据数组的方式。itemCount[n],rust 需要你覆盖所有错误
+
+# **making perfect software**
+
+your code can be oerfect
+
+- Deep familiarity with Rust abstractions, memory management, and concurrency
+
+内存安全，以及垃圾回收 ♻️：所有权和借用检查，为了让编译器立即程序，需要丰富的类型系统（enum、struct）。
+
+OPtion and Result 随处可见、零成本抽象、迭代
+
+High Level Features / Low Level SPEED
+
+async code Work Done ｜ wasm、contontainer、嵌入式
+
+also modern tooling：cargo、fmt、test、bench、clippy、rustup
+
+building tools：macro 宏、unsafe expression
+
+Basic：variable binding、type annotation、元组、_、断言、block are expressiom
+
+Middle： match expersion、struct / impl for struct、struct / function can be generic
+
+High：macro、Option、Result、iterators
+
+单元：crate、
+
+[Introduction - Rust By Example](https://doc.rust-lang.org/rust-by-example/)
+
+[The Rust Programming Language - The Rust Programming Language](https://doc.rust-lang.org/stable/book/title-page.html)
+
+[std - Rust](https://doc.rust-lang.org/std/)
+
+[陈天 · Rust 编程第一课_Rust_rust_语言_陈天_ct_编程_第一课_get hands dirty_编程语言_Java_C_C++_Python_用户体验_所有权_生命周期_性能_内存安全_内存管理_思维转换_类型系统-极客时间](https://time.geekbang.org/column/intro/100085301)
+
+[Writing an OS in Rust](https://os.phil-opp.com/)
+
+[用Rust写操作系统 | rCore OS 教程介绍 - Rust精选](https://rustmagazine.github.io/rust_magazine_2021/chapter_1/rcore_intro.html)
+
+**::rust magic：code doesen‘t compile::**
+
+also unsafe code for you
+
+rust  makes you feel like a genius
+
+> 选择主力的编程语言需要慎重，语言不仅仅是工具，而且是一种思维方式的改变。
+
+对设计和某些专业有更深的理解，综合性人才会更出色。MUI’s material design components
+
+[Cytoscape.js](https://js.cytoscape.org/)
+
+Graph theory (network) library for visualisation and analysis
+
+[篇一 | 想全面了解 Rust 语言 ？ 你想知道的都在这里](https://mp.weixin.qq.com/s/F_38SD34nDl7cZYJqZFNww)
+
+[篇二 | 想全面了解 Rust 语言 ？ 你想知道的都在这里](https://mp.weixin.qq.com/s/YfoGpDtkF779hS3nDr9s8w)
+
+熟悉常用的 Rust 标准库
+
+---
+
+创业失败的破产工程师，我基本上算是没有面试经历，也没有参与太多的大型项目，所以我的思考可以辩证的来看，非经验之谈，而是一种思考框架。
+
+审视如何做软件，如何做人，如何生活。
+
+No LeetCode, no take-home assignments, etc.
+
+到了一定年龄，专注是克服时间本身的唯一途径。
+
+软件行业的细分岗位太多，我只探索了我想从事或者感兴趣的一些领域，有很多比如游戏开发，嵌入式开发我都兴趣较弱或者没有接触过，如果你感兴趣可以自行探索一下。
+
+[Things Are Getting Rusty In Kernel Land](https://hackaday.com/2022/05/17/things-are-getting-rusty-in-kernel-land/)
+
+
+
+
+### 实战项目
+
+- 用 Rust 写爬虫：https://github.com/lonexw/rust-crawler
+- 键值数据库 kv-server：https://github.com/lonexw/kv-server
+- Redis 和 web 服务：https://course.rs/advance-practice/intro.html
+
+### 学习资料
+
+- Rust 语言圣经：https://course.rs/about-book.html
+- Asynchronous Programming In Rust: https://rust-lang.github.io/async-book/01_getting_started/01_chapter.html
+- [Introduction - The Little Book of Rust Macros](https://veykril.github.io/tlborm/)
