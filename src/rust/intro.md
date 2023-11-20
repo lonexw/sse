@@ -2,6 +2,16 @@
 
 ## Why Rust?
 
+**::rust magic：code doesen‘t compile::**
+
+also unsafe code for you
+
+rust  makes you feel like a genius
+
+> 选择主力的编程语言需要慎重，语言不仅仅是工具，而且是一种思维方式的改变。
+
+对设计和某些专业有更深的理解，综合性人才会更出色。MUI’s material design components
+
 > A new way for programming.
 
 喜欢吃螃蟹 🦀️，缓解内卷（不只当螺丝钉），**无 GC 且无需手动内存管理、性能高、工程性强、语言级安全性以及能同时得到工程派和学院派认可的语言。**
@@ -24,6 +34,62 @@ Rust 之难，不在于语言特性，而在于：
 - 系统开发（Linux 内核） / 系统工具（重写c、c++）
 - 操作系统，谷歌的 Fuchsia，RISC-V
 - 区块链、游戏 🎮
+
+Rust 生态
+- [篇一 | 想全面了解 Rust 语言 ？ 你想知道的都在这里](https://mp.weixin.qq.com/s/F_38SD34nDl7cZYJqZFNww)
+- [篇二 | 想全面了解 Rust 语言 ？ 你想知道的都在这里](https://mp.weixin.qq.com/s/YfoGpDtkF779hS3nDr9s8w)
+
+### 学习教程和书籍
+
+语言基础
+- [The Rust Programming Language - The Rust Programming Language](https://doc.rust-lang.org/stable/book/title-page.html)
+- [Rust语言圣经(Rust Course)](https://course.rs/)
+- Programming Rust: Fast, Safe Systems Development，2nd Edition
+- [Introduction - Rust By Example](https://doc.rust-lang.org/rust-by-example/)
+- [std - Rust](https://doc.rust-lang.org/std/) 熟悉常用的 Rust 标准库
+
+深入了解
+- https://rust-cli.github.io/book/index.html
+- https://rustwasm.github.io/docs/book/
+- https://doc.rust-lang.org/embedded-book
+- https://doc.rust-lang.org/reference/index.html
+- https://doc.rust-lang.org/nomicon/index.html
+- https://doc.rust-lang.org/nightly/unstable-book/index.html
+
+
+优秀的教程
+- https://stevedonovan.github.io/rust-gentle-intro/
+- https://learning-rust.github.io/docs/why-rust/
+- https://www.freecodecamp.org/news/rust-in-replit/
+- https://www.programiz.com/rust
+- https://www.educative.io/courses/learn-rust-from-scratch
+- https://learn.microsoft.com/en-us/training/paths/rust-first-steps/
+- [陈天 · Rust 编程第一课-极客时间](https://time.geekbang.org/column/intro/100085301)
+- No Boilerplate：https://www.youtube.com/watch?v=2hXNd6x9sZs&pp=ygUJcnVzdCBsYW5n
+- Let's Get Rusty：https://www.youtube.com/watch?v=OX9HJsJUDxA&list=PLai5B987bZ9CoVR-QEIN9foz4QCJ0H2Y8
+- https://www.youtube.com/@RustVideos
+
+实操项目：
+- [Writing an OS in Rust](https://os.phil-opp.com/)
+- [用Rust写操作系统 | rCore OS 教程介绍 - Rust精选](https://rustmagazine.github.io/rust_magazine_2021/chapter_1/rcore_intro.html)
+
+Awesome 集合：
+- https://rusty.course.rs/ 锈书
+- https://github.com/rust-boom/rust-boom
+- https://github.com/rust-unofficial/awesome-rust
+- https://github.com/rustcc/awesome-rust
+- https://github.com/vaaaaanquish/Awesome-Rust-MachineLearning
+- https://github.com/rust-in-blockchain/awesome-blockchain-rust
+
+---
+
+[Cytoscape.js](https://js.cytoscape.org/)
+
+Graph theory (network) library for visualisation and analysis
+
+
+
+
 
 ### Performance
 
@@ -59,7 +125,7 @@ Trait Object
 
 Assoacited Trait
 
-[进一步深入特征 - Rust语言圣经(Rust Course)](https://course.rs/basic/trait/advance-trait.html)
+
 
 
 
@@ -163,37 +229,7 @@ High：macro、Option、Result、iterators
 
 单元：crate、
 
-[Introduction - Rust By Example](https://doc.rust-lang.org/rust-by-example/)
 
-[The Rust Programming Language - The Rust Programming Language](https://doc.rust-lang.org/stable/book/title-page.html)
-
-[std - Rust](https://doc.rust-lang.org/std/)
-
-[陈天 · Rust 编程第一课_Rust_rust_语言_陈天_ct_编程_第一课_get hands dirty_编程语言_Java_C_C++_Python_用户体验_所有权_生命周期_性能_内存安全_内存管理_思维转换_类型系统-极客时间](https://time.geekbang.org/column/intro/100085301)
-
-[Writing an OS in Rust](https://os.phil-opp.com/)
-
-[用Rust写操作系统 | rCore OS 教程介绍 - Rust精选](https://rustmagazine.github.io/rust_magazine_2021/chapter_1/rcore_intro.html)
-
-**::rust magic：code doesen‘t compile::**
-
-also unsafe code for you
-
-rust  makes you feel like a genius
-
-> 选择主力的编程语言需要慎重，语言不仅仅是工具，而且是一种思维方式的改变。
-
-对设计和某些专业有更深的理解，综合性人才会更出色。MUI’s material design components
-
-[Cytoscape.js](https://js.cytoscape.org/)
-
-Graph theory (network) library for visualisation and analysis
-
-[篇一 | 想全面了解 Rust 语言 ？ 你想知道的都在这里](https://mp.weixin.qq.com/s/F_38SD34nDl7cZYJqZFNww)
-
-[篇二 | 想全面了解 Rust 语言 ？ 你想知道的都在这里](https://mp.weixin.qq.com/s/YfoGpDtkF779hS3nDr9s8w)
-
-熟悉常用的 Rust 标准库
 
 ---
 

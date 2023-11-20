@@ -61,7 +61,7 @@
 mdbook serve --open
 ```
 
-本书使用 mdBook 生成，使用前需安装好 [Rust](https://rustup.rs) 环境及 [mdBook](git@github.com:lonexw/sse-book.git)。
+本书使用 mdBook 生成，使用前需安装好 [Rust](https://rustup.rs) 环境及 [mdBook](https://rust-lang.github.io/mdBook/)。
 
 
 ### 版权说明
