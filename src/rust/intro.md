@@ -4,10 +4,30 @@
 
 选择主力的编程语言需要慎重，语言不仅仅是工具，而且是一种思维方式的改变。
 
+Rust is a language for the next 40 years.
+
 A new way for programming. Rust  makes you feel like a genius, also unsafe code for you, rust magic：code doesen‘t compile.
 
+编译器是你最好的朋友，驾校教练。（强类型检查、GOOD ERRORS）
+
+Your Code Can be Perfect. and Your Code WON'T Crash.
+- 错误和边界处理
+- 内存安全，无 GC
+- Modern Tooling
+- Think in expression ｜ Iterators ｜ Option ｜ Rich Types
+- async code and macro
+- Zero Cost Abstraction(CPU 概念的举例，只存在我们脑海，本质是 01)
 
 喜欢吃螃蟹 🦀️，缓解内卷（不只当螺丝钉），**无 GC 且无需手动内存管理、性能高、工程性强、语言级安全性以及能同时得到工程派和学院派认可的语言。**
+
+动机：我能够完成我的项目：
+- FAST
+- RELIABLE from the start
+    - NO UNUSED VARIABLES
+    - EXHAUSTIVE PATTERN MATCHING
+    - ERRORS MUST BE HANDLED
+- PRODUCTIVE：NO RUST2.0
+    - Type System with Superpower
 
 >
 
@@ -22,6 +42,8 @@ Rust 之难，不在于语言特性，而在于：
 - 心智负担较重，特别是初中级阶段
 
 不能抱着试一试的态度，rust 的情况不允许你边工作，一边轻松愉快的学习，需要有计划的深入学习，系统性的提升编程能力，rust 无法看看语法就开始写代码，需要多学几次，深入进去，在克服诸多困难之后，会收获与众不同的编程之旅。
+
+built my Rust toolkit：https://www.youtube.com/watch?v=ifaLk5v3W90
 
 #### 1）编程语言的基础概念
 
@@ -52,7 +74,11 @@ Rust 之难，不在于语言特性，而在于：
 - 多线程并发编程
 - Unsafe Rust
 - Marco 宏编程
-- async/await 异步编程
+    - DSL & 元编程
+    - They run at compile time
+    - They can modify your sources code
+    - MARCOS are a build tool inside your code
+ - async/await 异步编程
 
 #### 5）实战项目
 - [Writing an OS in Rust](https://os.phil-opp.com/)
@@ -67,9 +93,11 @@ Rust 之难，不在于语言特性，而在于：
 
 语言基础
 - [The Rust Programming Language - The Rust Programming Language](https://doc.rust-lang.org/stable/book/title-page.html)
+- https://rust-book.cs.brown.edu/
 - [Rust语言圣经(Rust Course)](https://course.rs/)
 - Programming Rust: Fast, Safe Systems Development，2nd Edition
 - [Introduction - Rust By Example](https://doc.rust-lang.org/rust-by-example/)
+- Rustlings code kata, learn by fixing tiny failing tests https://github.com/rust-lang/rustlings
 - [std - Rust](https://doc.rust-lang.org/std/) 熟悉常用的 Rust 标准库
 
 深入了解
@@ -82,16 +110,19 @@ Rust 之难，不在于语言特性，而在于：
 
 
 优秀的教程
+- https://fasterthanli.me/articles/a-half-hour-to-learn-rust
 - https://stevedonovan.github.io/rust-gentle-intro/
 - https://learning-rust.github.io/docs/why-rust/
 - https://www.freecodecamp.org/news/rust-in-replit/
 - https://www.programiz.com/rust
 - https://www.educative.io/courses/learn-rust-from-scratch
 - https://learn.microsoft.com/en-us/training/paths/rust-first-steps/
+- https://www.oreilly.com/library/view/rust-programming-by/9781788390637/
 - [陈天 · Rust 编程第一课-极客时间](https://time.geekbang.org/column/intro/100085301)
 - No Boilerplate：https://www.youtube.com/watch?v=2hXNd6x9sZs&pp=ygUJcnVzdCBsYW5n
 - Let's Get Rusty：https://www.youtube.com/watch?v=OX9HJsJUDxA&list=PLai5B987bZ9CoVR-QEIN9foz4QCJ0H2Y8
 - https://www.youtube.com/@RustVideos
+- https://www.youtube.com/watch?v=784JWR4oxOI
 
 
 Awesome 集合：
@@ -280,3 +311,10 @@ No LeetCode, no take-home assignments, etc.
 Rust 生态
 - [篇一 | 想全面了解 Rust 语言 ？ 你想知道的都在这里](https://mp.weixin.qq.com/s/F_38SD34nDl7cZYJqZFNww)
 - [篇二 | 想全面了解 Rust 语言 ？ 你想知道的都在这里](https://mp.weixin.qq.com/s/YfoGpDtkF779hS3nDr9s8w)
+
+Python
+- https://www.razorsecure.com/careers
+- https://www.datacamp.com
+Haskell
+- Learn Your a Haskell for Great Good
+- Real World Haskell
