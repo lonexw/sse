@@ -1,20 +1,18 @@
 # 选择一把合适的剑：Rust
 
-## Why Rust?
+### Why Rust?
 
-**::rust magic：code doesen‘t compile::**
+选择主力的编程语言需要慎重，语言不仅仅是工具，而且是一种思维方式的改变。
 
-also unsafe code for you
+A new way for programming. Rust  makes you feel like a genius, also unsafe code for you, rust magic：code doesen‘t compile.
 
-rust  makes you feel like a genius
-
-> 选择主力的编程语言需要慎重，语言不仅仅是工具，而且是一种思维方式的改变。
-
-对设计和某些专业有更深的理解，综合性人才会更出色。MUI’s material design components
-
-> A new way for programming.
 
 喜欢吃螃蟹 🦀️，缓解内卷（不只当螺丝钉），**无 GC 且无需手动内存管理、性能高、工程性强、语言级安全性以及能同时得到工程派和学院派认可的语言。**
+
+>
+
+### Roadmap 学习之旅 
+
 
 Rust 之难，不在于语言特性，而在于：
 
@@ -23,21 +21,47 @@ Rust 之难，不在于语言特性，而在于：
 - 大量的标准库方法记忆及熟练使用，这些是保证开发效率的关键
 - 心智负担较重，特别是初中级阶段
 
-不能抱着试一试的态度，rust 的情况不允许你边工作，一边轻松愉快的学习，需要深入学习，系统性的提升编程能力，rust无法看看语法就开始写代码，需要多学几次，深入进去，在克服诸多困难之后，会收获与众不同的编程之旅。
+不能抱着试一试的态度，rust 的情况不允许你边工作，一边轻松愉快的学习，需要有计划的深入学习，系统性的提升编程能力，rust 无法看看语法就开始写代码，需要多学几次，深入进去，在克服诸多困难之后，会收获与众不同的编程之旅。
 
-性能，理解内存、堆栈、引用、变量作用域等，以及编译器的强迫症。
+#### 1）编程语言的基础概念
 
-学习自驱性。
+- 变量、基本类型以及复合类型
+- 重要的集合类型
+- Function and Control Flow、
+- Structs
 
-- Rust 的 WASM，例如 `swc`、 `deno` 等。同时 `nextjs`
-- 基础设施层，数据库、搜索引擎、网络设施、云原生等
-- 系统开发（Linux 内核） / 系统工具（重写c、c++）
-- 操作系统，谷歌的 Fuchsia，RISC-V
-- 区块链、游戏 🎮
+#### 2）Rust 语言的难点
 
-Rust 生态
-- [篇一 | 想全面了解 Rust 语言 ？ 你想知道的都在这里](https://mp.weixin.qq.com/s/F_38SD34nDl7cZYJqZFNww)
-- [篇二 | 想全面了解 Rust 语言 ？ 你想知道的都在这里](https://mp.weixin.qq.com/s/YfoGpDtkF779hS3nDr9s8w)
+- 所有权、借用和引用
+- 泛型、Traits及生命周期
+- 循环引用和自引用问题
+
+
+#### 3）更多语言能力
+
+- 枚举与模式匹配
+- 错误处理
+- 全局变量
+- 代码组织：Cargo、Package、Crates、注释及文档
+- 自动化测试
+
+#### 4）进阶学习
+
+- 函数式编程：闭包、迭代器
+- 智能指针
+- 多线程并发编程
+- Unsafe Rust
+- Marco 宏编程
+- async/await 异步编程
+
+#### 5）实战项目
+- [Writing an OS in Rust](https://os.phil-opp.com/)
+- [用Rust写操作系统 | rCore OS 教程介绍 - Rust精选](https://rustmagazine.github.io/rust_magazine_2021/chapter_1/rcore_intro.html)
+- 用 Rust 写爬虫：https://github.com/lonexw/rust-crawler
+- 键值数据库 kv-server：https://github.com/lonexw/kv-server
+- Redis 和 web 服务：https://course.rs/advance-practice/intro.html
+
+>
 
 ### 学习教程和书籍
 
@@ -69,9 +93,6 @@ Rust 生态
 - Let's Get Rusty：https://www.youtube.com/watch?v=OX9HJsJUDxA&list=PLai5B987bZ9CoVR-QEIN9foz4QCJ0H2Y8
 - https://www.youtube.com/@RustVideos
 
-实操项目：
-- [Writing an OS in Rust](https://os.phil-opp.com/)
-- [用Rust写操作系统 | rCore OS 教程介绍 - Rust精选](https://rustmagazine.github.io/rust_magazine_2021/chapter_1/rcore_intro.html)
 
 Awesome 集合：
 - https://rusty.course.rs/ 锈书
@@ -199,8 +220,6 @@ $ curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
 
 - [https://www.shuttle.rs/blog/2022/06/30/error-handling](https://www.shuttle.rs/blog/2022/06/30/error-handling)
 
-# 尝试一下 Try Rust + Go + NODEJS（React components + Redux + TypeScript + Vue）
-
 一个非常简单的例子，访问数据数组的方式。itemCount[n],rust 需要你覆盖所有错误
 
 # **making perfect software**
@@ -246,16 +265,18 @@ No LeetCode, no take-home assignments, etc.
 [Things Are Getting Rusty In Kernel Land](https://hackaday.com/2022/05/17/things-are-getting-rusty-in-kernel-land/)
 
 
+对设计和某些专业有更深的理解，综合性人才会更出色。MUI’s material design components
 
+性能，理解内存、堆栈、引用、变量作用域等，以及编译器的强迫症。
 
-### 实战项目
+学习自驱性。
 
-- 用 Rust 写爬虫：https://github.com/lonexw/rust-crawler
-- 键值数据库 kv-server：https://github.com/lonexw/kv-server
-- Redis 和 web 服务：https://course.rs/advance-practice/intro.html
+- Rust 的 WASM，例如 `swc`、 `deno` 等。同时 `nextjs`
+- 基础设施层，数据库、搜索引擎、网络设施、云原生等
+- 系统开发（Linux 内核） / 系统工具（重写c、c++）
+- 操作系统，谷歌的 Fuchsia，RISC-V
+- 区块链、游戏 🎮
 
-### 学习资料
-
-- Rust 语言圣经：https://course.rs/about-book.html
-- Asynchronous Programming In Rust: https://rust-lang.github.io/async-book/01_getting_started/01_chapter.html
-- [Introduction - The Little Book of Rust Macros](https://veykril.github.io/tlborm/)
+Rust 生态
+- [篇一 | 想全面了解 Rust 语言 ？ 你想知道的都在这里](https://mp.weixin.qq.com/s/F_38SD34nDl7cZYJqZFNww)
+- [篇二 | 想全面了解 Rust 语言 ？ 你想知道的都在这里](https://mp.weixin.qq.com/s/YfoGpDtkF779hS3nDr9s8w)
