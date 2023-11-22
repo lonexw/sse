@@ -28,17 +28,14 @@
 
 或者就像这首现代禅意诗描述的：
 
-> **To follow the path:**
-
-> **look to the master,**
-
-> **follow the master,**
-
-> **walk with the master,**
-
-> **see through the master,**
-
-> **become the master.**
+```
+To follow the path:
+look to the master,
+follow the master,
+walk with the master,
+see through the master,
+become the master.
+```
 
 所以，如果你想成为一名黑客，重复以下事情直到你相信他们：
 

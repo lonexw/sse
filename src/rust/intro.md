@@ -28,7 +28,17 @@ Your Code Can be Perfect. and Your Code WON'T Crash.
     - ERRORS MUST BE HANDLED
 - PRODUCTIVE：NO RUST2.0
     - Type System with Superpower
-
+ 
+- Design Code 
+   - Build Structure, Convert Business Knowledge to Type System/Enum
+     - No Classes
+     - ALGEBRAIC TYPE SYSTEM
+     - data normalization
+     - state machines
+- Write Code / Read Code / Test Code
+   - Work with compiler.
+- Maintenance Code / Support their Code
+    - Trust code, 少维护
 >
 
 ### Roadmap 学习之旅 
@@ -67,13 +77,15 @@ built my Rust toolkit：https://www.youtube.com/watch?v=ifaLk5v3W90
 - 代码组织：Cargo、Package、Crates、注释及文档
 - 自动化测试
 
+https://www.youtube.com/watch?v=dFkGNe4oaKk
+
 #### 4）进阶学习
 
 - 函数式编程：闭包、迭代器
 - 智能指针
 - 多线程并发编程
 - Unsafe Rust
-- Marco 宏编程
+- Marco 宏编程 https://www.youtube.com/watch?v=MWRPYBoCEaY
     - DSL & 元编程
     - They run at compile time
     - They can modify your sources code
@@ -303,6 +315,7 @@ No LeetCode, no take-home assignments, etc.
 学习自驱性。
 
 - Rust 的 WASM，例如 `swc`、 `deno` 等。同时 `nextjs`
+- WebGL/WebGPU
 - 基础设施层，数据库、搜索引擎、网络设施、云原生等
 - 系统开发（Linux 内核） / 系统工具（重写c、c++）
 - 操作系统，谷歌的 Fuchsia，RISC-V

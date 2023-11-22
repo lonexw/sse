@@ -29,8 +29,9 @@
 
 ---
 
-- [选择一把合适的剑：Rust](./rust/intro.md)
+- [选择一把合适的剑 🗡️ ：Rust](./rust/intro.md)
     - [理解所有权概念](./rust/ownership.md)
+    - [❌ 错误处理](./rust/error_handled.md)
     - [异步编程](./rust/asynchronous_programming.md)
     - [游戏引擎](./rust/game_engine.md)
 
@@ -40,6 +41,7 @@
     - [数据库](./industry/database.md)
     - [密码学与区块链](./industry/blockchain.md)
     - [分布式系统与云](./industry/cloud.md)
+    - [SaaS 架构](./industry/saas.md)
 
 ---
 
