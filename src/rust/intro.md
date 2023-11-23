@@ -6,6 +6,8 @@
 
 Rust is a language for the next 40 years.
 
+Rust is a universal language.
+
 A new way for programming. Rust  makes you feel like a genius, also unsafe code for you, rust magic：code doesen‘t compile.
 
 编译器是你最好的朋友，驾校教练。（强类型检查、GOOD ERRORS）
@@ -71,7 +73,7 @@ built my Rust toolkit：https://www.youtube.com/watch?v=ifaLk5v3W90
 
 #### 3）更多语言能力
 
-- 枚举与模式匹配
+- 枚举与模式匹配，状态机，孙悟空72变
 - 错误处理
 - 全局变量
 - 代码组织：Cargo、Package、Crates、注释及文档
@@ -103,15 +105,6 @@ https://www.youtube.com/watch?v=dFkGNe4oaKk
 
 ### 学习教程和书籍
 
-语言基础
-- [The Rust Programming Language - The Rust Programming Language](https://doc.rust-lang.org/stable/book/title-page.html)
-- https://rust-book.cs.brown.edu/
-- [Rust语言圣经(Rust Course)](https://course.rs/)
-- Programming Rust: Fast, Safe Systems Development，2nd Edition
-- [Introduction - Rust By Example](https://doc.rust-lang.org/rust-by-example/)
-- Rustlings code kata, learn by fixing tiny failing tests https://github.com/rust-lang/rustlings
-- [std - Rust](https://doc.rust-lang.org/std/) 熟悉常用的 Rust 标准库
-
 深入了解
 - https://rust-cli.github.io/book/index.html
 - https://rustwasm.github.io/docs/book/
@@ -120,25 +113,7 @@ https://www.youtube.com/watch?v=dFkGNe4oaKk
 - https://doc.rust-lang.org/nomicon/index.html
 - https://doc.rust-lang.org/nightly/unstable-book/index.html
 
-
-优秀的教程
-- https://fasterthanli.me/articles/a-half-hour-to-learn-rust
-- https://stevedonovan.github.io/rust-gentle-intro/
-- https://learning-rust.github.io/docs/why-rust/
-- https://www.freecodecamp.org/news/rust-in-replit/
-- https://www.programiz.com/rust
-- https://www.educative.io/courses/learn-rust-from-scratch
-- https://learn.microsoft.com/en-us/training/paths/rust-first-steps/
-- https://www.oreilly.com/library/view/rust-programming-by/9781788390637/
-- [陈天 · Rust 编程第一课-极客时间](https://time.geekbang.org/column/intro/100085301)
-- No Boilerplate：https://www.youtube.com/watch?v=2hXNd6x9sZs&pp=ygUJcnVzdCBsYW5n
-- Let's Get Rusty：https://www.youtube.com/watch?v=OX9HJsJUDxA&list=PLai5B987bZ9CoVR-QEIN9foz4QCJ0H2Y8
-- https://www.youtube.com/@RustVideos
-- https://www.youtube.com/watch?v=784JWR4oxOI
-
-
 Awesome 集合：
-- https://rusty.course.rs/ 锈书
 - https://github.com/rust-boom/rust-boom
 - https://github.com/rust-unofficial/awesome-rust
 - https://github.com/rustcc/awesome-rust
