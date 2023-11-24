@@ -77,6 +77,10 @@ Linux 终端的基本命令（ls、cp、rm 等等）都是 GNU coreutils 工具�
 - WebSocket：[https://ably.com/blog/introducing-the-websocket-handbook](https://ably.com/blog/introducing-the-websocket-handbook)
 - WebRTC：[https://webrtc.org/](https://webrtc.org/)
 
+[19] Linux 命名管道简介: https://goodyduru.github.io/os/2023/09/26/ipc-named-pipes.html
+[20] 《套接字》: https://goodyduru.github.io/os/2023/10/03/ipc-unix-domain-sockets.html
+[21] 《Unix 信号》: https://goodyduru.github.io/os/2023/10/05/ipc-unix-signals.html
+
 #### 3）Linux Shell 脚本能力
 
 有一定的 **Bash** 及 **Python** 编程能力会让你能解决很多工作中的自动化或者数据处理问题，包括解决问题的方式和途径也会增加不少。

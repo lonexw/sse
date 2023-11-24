@@ -66,6 +66,8 @@ built my Rust toolkit：https://www.youtube.com/watch?v=ifaLk5v3W90
 
 #### 2）Rust 语言的难点
 
+为何不用赋值而用绑定呢（其实你也可以称之为赋值，但是绑定的含义更清晰准确）？这里就涉及 Rust 最核心的原则——所有权
+
 - 所有权、借用和引用
 - 泛型、Traits及生命周期
 - 循环引用和自引用问题
@@ -81,7 +83,7 @@ built my Rust toolkit：https://www.youtube.com/watch?v=ifaLk5v3W90
 
 https://www.youtube.com/watch?v=dFkGNe4oaKk
 
-#### 4）进阶学习
+#### 4）进ru阶学习
 
 - 函数式编程：闭包、迭代器
 - 智能指针

@@ -4,15 +4,29 @@
 
 ### 安装
 
-跟随官网的[入门教程](https://www.rust-lang.org/zh-CN/learn/get-started)或 [rustup.sh](https://rustup.rs/) 的指引完成 Rust 环境安装。
+1. 跟随官网的[入门教程](https://www.rust-lang.org/zh-CN/learn/get-started)或 [rustup.sh](https://rustup.rs/) 的指引完成 Rust 环境安装。
 
-### 学习目标 🎯
+2. 学会使用 [Cargo](https://doc.rust-lang.org/cargo/getting-started/first-steps.html) 来新建、构建、发布项目。
 
-- 搞定常见的编程概念
-- 常见的集合一览, 存放数据
-- 构建想法（Design Code）：Structs ｜ 枚举 Enum ｜ Rich Types 
+### 目标 🎯
 
-### 学习资料
+#### 1）[搞定**常见的编程概念**](./common_programming_concepts.md)
+
+就像学习英文需要首先学习字母、发音、语法等基础，也需要先搞懂编程语言中常见的概念：
+- 变量
+- 数据类型
+- 函数
+- 控制流
+
+#### 2）[常见的**集合 Collection**](./common_collection.md)
+
+存放数据的容器
+
+#### 3）[构建想法（Design Code）](./design_code.md)
+
+Structs ｜ 枚举 Enum ｜ Rich Types 
+
+### 资料
 
 > 任何时候，如果你拿不准标准库中的类型或函数的用途和用法，不要慌或者只会 Google，请查阅应用程序接口（application programming interface，API）文档！
 
