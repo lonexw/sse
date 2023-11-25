@@ -115,6 +115,14 @@ https://www.youtube.com/watch?v=dFkGNe4oaKk
 - https://doc.rust-lang.org/nomicon/index.html
 - https://doc.rust-lang.org/nightly/unstable-book/index.html
 
+- 《Rust设计模式》（Rust Design Patterns）也是一本开放书籍，着重于教给用户Rust的惯用法。
+- Possible Rust是一个设计精美的语言站，谈论“Rust实际可能实现的事情”。主要提供两个主要部分：指南和模式。
+- Easy Rust（dhghomon.github.io/easy_rust/），这是一本非常值得零基础的人入门的教程。这是另一本开放书籍，它以一种简单的方式解释和处理Rust的概念，使它们更易于理解和理解，尤其是对于那些初次接触Rust的人或来自其他高级语言的工程师。改善一些举例和类比非常适用，会让某些生涩的概念更好的理解，书中一些小例子也是非常好，比如对各种Rust类型的介绍例子，可以解决我们刚入Rust，不知道怎么下手写代码的情况。概述可以结合Rust官方的教程一起学习。喜欢看视频学习（虫虫强烈不建议）的同学也有个好消息，就是该书配套的视频教程也在油管上有了（youtube /playlist?list=PLfllocyHVgsRwLkTAhG0E-2QxCf-ozBkk）。
+
+https://baijiahao.baidu.com/s?id=1695541208019513535&wfr=spider&for=pc
+https://blog.51cto.com/u_15683898/5407960
+https://zhuanlan.zhihu.com/p/599522779?utm_id=0
+
 Awesome 集合：
 - https://github.com/rust-boom/rust-boom
 - https://github.com/rust-unofficial/awesome-rust

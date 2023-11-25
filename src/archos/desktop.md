@@ -93,3 +93,6 @@ Ly should work with any X desktop environment, and provides basic wayland suppor
 
 - https://linux.cn/article-12068-1.html
 - https://linux.cn/article-12773-1.html
+
+复制粘贴的割裂问题必须搞定
+

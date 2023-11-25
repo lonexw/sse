@@ -17,6 +17,7 @@
 - 数据类型
 - 函数
 - 控制流
+- 枚举与模式匹配
 
 #### 2）[常见的**集合 Collection**](./common_collection.md)
 
