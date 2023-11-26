@@ -2,7 +2,7 @@
 
 ### 变量绑定、解构与可变性
 
-变量绑定（variable binding），为什么不叫变量赋值后面会聊到：
+变量绑定（variable binding），为什么不叫变量赋值[后面](../ownership.md)会聊到：
 ```rust
 // &str 明确指定变量的类型，也可省略让编译器自行推导
 let name: &str = "Rust"; 
@@ -83,6 +83,74 @@ let the_first_season: &[&str] = &months[0..=2]; // 也可以简化为：&months[
 println!("The first season: {:?}", the_first_season);
 ```
 
+**Enums 枚举**
+
+列举所有可能的成员（变体 Variant）来定义的数据类型，在 Rust 中非常有用且常见。
+
+不少现实世界的事务（可穷举）都可以用枚举来表示（月份、星期、方向等）。
+
+```rust
+#[derive(Debug)]
+enum Message {                  // 定义枚举类型来表示系统消息
+    Quit,                       // 无数据的枚举成员
+    Move { x: i32, y: i32 },    // 包含匿名结构体
+    Write(String),              // 包含 String 字符串
+    ChangeColor(i32, i32, i32), // 包含元组结构体
+    Other,                      // 其他消息数据
+}
+let msg = Message::Write("Start Success!");
+
+#[derive(Copy, Clone)]
+#[repr(u8)]   // 限定范围为`0..=255`
+enum Week {   // 定义英文的星期和数值相对应的枚举
+  Monday = 1, // 1
+  Tuesday,    // 2
+  Wednesday,  // 3
+  Thursday,   // 4
+  Friday,     // 5
+  Saturday,   // 6
+  Sunday,     // 7
+}
+
+impl Week {   // 为枚举类型定义方法 Methods
+  fn is_weekend(&self) -> bool {
+    if (*self as u8) > 5 {
+      return true;
+    }
+    false
+  }
+}
+
+let mon = Week::Monday as i32;  // 使用 as 将 enum 成员转换为对应的数值。
+
+// 用 Rust 实现 Json 解析工具，定义枚举类型去枚举 Json 允许的数据类型
+// 在其他语言中，可能需要定义很多方法来表达出这些内容
+enum Json {
+  Null,
+  Boolean(bool),
+  Number(f64),
+  String(String),
+  Array(Vec<Json>),
+  Object(Box<HashMap<String, Json>>),
+}
+```
+
+常见的枚举 **Option**，`Some or None` 只是省略了 `Option::` 前缀, 本质上是枚举值;
+```rust
+enum Option<T> {
+    Some(T),    // Some(T) 可以包含任何类型的数据
+    None,       // 表示空值
+}
+```
+
+对 Option<T> 进行运算之前必须将其转换为 T（unwrap 方法）。通常这能帮助我们捕获到空值最常见的问题之一：假设某值不为空但实际上为空的情况，消除了错误地假设一个非空值的风险，会让你对代码更加有信心。
+
+这是 Rust 的经过深思熟虑的设计决策，来限制空值的泛滥以增加 Rust 代码的安全性。
+
+- 标准库文档 [std-Enums](https://doc.rust-lang.org/std/option/enum.Option.html)
+
+> 枚举类型和下面的模式匹配控制流是绝佳拍档。
+
 ### 函数与流程控制
 
 Rust 是一门基于 **表达式（expression-based）** 的语言（函数式语言的重要特征），需要理解其区别。
@@ -138,13 +206,97 @@ while n <= 5  {
 }
 ```
 
-### 枚举与模式匹配
 
-Enums
+### 模式匹配（Patern match）
 
-match expression
+match 控制流称得上是神兵利器,为复杂的类型系统提供了非常棒的解构能力。就像绝世锦囊，**确保所有可能的情况都得到处理**，算无遗策。
 
-if let :https://kaisery.github.io/trpl-zh-cn/ch06-03-if-let.html
+无论是多个 `if-else` 的条件分支判断场景，还是根据枚举类型的值匹配执行不同的任务，match 模式匹配都可以有更高效、简练的代码表达(可以少写不少代码)。
+
+```rust
+// Option 的本质是一个枚举值，有两个成员：Some<T> | None
+let r: Option<&str> = Some("Rust");   
+println!("{}", r.unwrap());
+
+// unwrap 的实现就是利用了 macth, 等同于:
+match r {                           // 对 Option 进行模式匹配
+    Some(i) => println!("{i}"),     // 处理不同枚举值的执行，此处 Some 内部的值绑定了变量 i：&str
+    None => println!("None")        // 必须处理所有情况，匹配是穷尽的
+} // match 也是表达式，会返回值, 可以使用 macth 来赋值
+```
+再看一个示例，比如我们玩掷骰子 🎲 游戏，如果结果是小于等于 3, 会失去 1 积分，如果结果是 6 会获得 2 积分，其他情况积分不变：
+
+```rust
+match dice_roll {
+    1 | 2 | 3 => lose(),    // 或者范围表达式：1..=3
+    6 => win(),
+    _ => do_nothing(),  // _ 占位符代表其他的值，满足穷举性
+}
+```
+macthes! 宏与变量遮蔽的细节：
+```rust
+enum MyEnum { Foo, Bar }
+
+fn main() {
+    let v = vec![MyEnum::Foo,MyEnum::Bar,MyEnum::Foo];
+    v.iter().filter(|x| matches!(x, MyEnum::Foo));
+
+    let foo = 'f';
+    assert!(matches!(foo, 'A'..='Z' | 'a'..='z'));
+
+    let bar = Some(4);
+    assert!(matches!(bar, Some(x) if x > 2));
+
+    // match or if-let 都是新的代码块，此处绑定相当于新变量
+    let age = Some(30);
+    match age {
+        // 此处绑定相当于 let age = 30; 原先的 age: Some(30) 被覆盖了 
+        Some(age) =>  println!("将 Some 内部数据（{}）绑定到变量 age", age),
+        _ => ()
+    }
+}
+``` 
+蛮多情况，我们只想处理匹配某个模式的情况，而不关心其他匹配情况，可以简写程序：
+```rust
+// 只处理有配置数值的情况
+let config_max = Some(3u8);
+match config_max {
+    Some(max) => println!("The maximum is configured to be {}", max),
+    _ => (),
+}
+
+// 用 if-let 控制流简写
+if let Some(max) = config_max {
+    println!("The maximum is configured to be {}", max);
+}
+```
+简单解释一下，`let PATTERN = EXPERSION` 变量绑定是一种最简单的模式匹配，将表达式与模式匹配，并对匹配成功高的进行变量绑定（赋值），回想一下变量绑定的知识：
+```rust
+let x = 1;
+let (x, y) = (0, 1);    // 元组的解构赋值，x=0,y=1
+
+// 现在是不是更容易上面理解 if-let 操作啦，同理，while-let 也没啥问题
+let mut stack = vec![1, 2, 3];
+while let Some(top) = stack.pop() { // let 模式匹配，变量绑定 top
+  println!("{}", top);  // 没有元素 pop, 返回 None,模式无法匹配，退出循环
+}
+
+// for (idx, value) in ids.iter().enumerate() {} 
+// for 迭代同样也是模式匹配的过程，给控制变量绑定赋值
+
+fn add(x: i32, y:i32) {}// 函数参数传值，本质也是在做模式匹配(参数绑定)的操作
+```
+咋样，模式匹配非常有用吧，看透本质，学习神速 ⚡
+
+#### 模式匹配的高级用法
+
+- 解构后进行模式匹配时，如果某个值没有对应的变量名，则可以使用 @ 手动绑定一个变量名;
+- ref 和 mut 修饰模式匹配中的变量（所有权和可变性）;
+- 匹配守卫（match guard），允许匹配分支添加额外的后置条件;
+- 解构赋值时，如果解构的是一个引用，则被匹配的变量也将被赋值为对应元素的引用;
+- 对解引用（deref）进行匹配时, 可能会发生所有权转移;（所有权的难点）
+
+---
 
 ### References
 
