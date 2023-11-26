@@ -45,6 +45,9 @@ Your Code Can be Perfect. and Your Code WON'T Crash.
 
 ### Roadmap 学习之旅 
 
+回顾一些计算机基础知识：
+
+- 计算机内存管理、指针
 
 Rust 之难，不在于语言特性，而在于：
 
@@ -71,6 +74,7 @@ built my Rust toolkit：https://www.youtube.com/watch?v=ifaLk5v3W90
 - 所有权、借用和引用
 - 泛型、Traits及生命周期
 - 循环引用和自引用问题
+- 指针、切片类型
 
 
 #### 3）更多语言能力
@@ -137,7 +141,7 @@ Awesome 集合：
 Graph theory (network) library for visualisation and analysis
 
 
-
+https://rust-book.junmajinlong.com/ch7/02_vec_capacity_reallocation.html
 
 
 ### Performance

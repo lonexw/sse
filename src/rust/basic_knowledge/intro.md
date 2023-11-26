@@ -12,20 +12,16 @@
 
 #### 1）[搞定**常见的编程概念**](./common_programming_concepts.md)
 
-就像学习英文需要首先学习字母、发音、语法等基础，也需要先搞懂编程语言中常见的概念：
-- 变量
-- 数据类型
-- 函数
-- 控制流
-- 枚举与模式匹配
+就像学习英文需要首先学习字母、发音、语法等基础，也需要先搞懂编程语言中常见的概念。
 
-#### 2）[常见的**集合 Collection**](./common_collection.md)
+#### 2）[常见的**集合 Collections**](./common_collection.md)
 
-存放数据的容器
+集合就像装东西的容器，经常会用到。
 
-#### 3）[构建想法（Design Code）](./design_code.md)
+#### 3）[用代码构建想法](./design_code.md)
 
-Structs ｜ 枚举 Enum ｜ Rich Types 
+构建想法（Design Code） Structs ｜ 枚举 Enum ｜ Rich Types 
+
 
 ### 资料
 
