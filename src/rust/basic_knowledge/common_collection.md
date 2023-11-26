@@ -181,8 +181,39 @@ for b in "Здравствуйте".bytes() { print!("{b} "); }
 
 ### 3）哈希 HashMap
 
+实际业务中有很多键值（key-value）对应的数据，比如游戏排行榜：每个玩家和对应的分数，我们可以用 `HashMap<k, v>` 来存储, 它通过一个 `哈希函数（hashing function)` 来实现映射，决定如何将键和值放入内存中。
+
+哈希 map 将它们的数据储存在堆上，所有的键必须是相同类型，值也必须都是相同类型。
+
+```rust
+// 不常用，没有被 prelude 自动引入：https://doc.rust-lang.org/std/prelude/index.html
+use std::collections::HashMap;	
+
+let mut scores = HashMap::new();
+let a = "Player A";	// 键类型为字符串切片引用：&str 
+let b = "Player B";	
+scores.insert(a, 10); 
+scores.insert(b, 50);
+
+scores.insert(a, 20);	// 如果键已经存在，会覆盖
+scores.entry(b).or_insert(60);	// 只在键没有对应一个值时插入, 所以这里不会更新数据
+
+// 任意顺序打印出每一个键值对
+for (key, value) in &scores { println!("{key}: {value}"); }
+```
+常见的代码示例：统计单词频次
+```rust
+let mut map = std::collections::HashMap::new();
+for word in "hello rust hello world wonderful world, rust".split_whitespace() {
+	// or_insert 方法返回这个键的值的一个可变引用（&mut V）, 存放在 count 变量
+	let count = map.entry(word).or_insert(0); 
+	*count += 1;	// * 解引用，重新赋值，更新单词的统计数
+}
+println!("{:?}", map);
+```
+
 ---
 
-更多[集合数据类型](https://doc.rust-lang.org/std/collections/index.html)，可以在后续需要时学习。
+程序需要储存、访问和修改数据时，来回顾学习，更多[集合数据类型](https://doc.rust-lang.org/std/collections/index.html)，可以在后续需要时学习。
 
 

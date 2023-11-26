@@ -34,6 +34,7 @@
 - 常用的 Rust 标准库: [std - Rust](https://doc.rust-lang.org/std/) 
 - 图灵有本不错的书：[《Programming Rust: Fast, Safe Systems Development，2nd Edition》](https://www.oreilly.com/library/view/programming-rust-2nd/9781492052586/)
 - Rust 语言圣经：[https://course.rs](https://course.rs/about-book.html)
+- https://rust-book.junmajinlong.com/ch7/02_vec_capacity_reallocation.html
 
 不喜欢读文档：
 
