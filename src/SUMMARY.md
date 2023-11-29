@@ -29,7 +29,6 @@
 
 ---
 
-- [Info](./rust/links.md)
 - [选择一把合适的剑 🗡️ ：Rust](./rust/intro.md)
     - [编程语言基础](./rust/basic_knowledge/intro.md)
         - [常见的编程概念](./rust/basic_knowledge/common_programming_concepts.md)
