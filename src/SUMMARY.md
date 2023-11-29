@@ -29,15 +29,17 @@
 
 ---
 
+- [Info](./rust/links.md)
 - [选择一把合适的剑 🗡️ ：Rust](./rust/intro.md)
-    - [编程基础](./rust/basic_knowledge/intro.md)
+    - [编程语言基础](./rust/basic_knowledge/intro.md)
         - [常见的编程概念](./rust/basic_knowledge/common_programming_concepts.md)
         - [Vector、str、HashMap](./rust/basic_knowledge/common_collection.md)
         - [Design Code](./rust/basic_knowledge/design_code.md)
     - [理解所有权](./rust/ownership.md)
     - [错误处理 ❌](./rust/error_handled.md)
+    - [进阶内容](./rust/advanced/intro.md)
     - [异步编程](./rust/asynchronous_programming.md)
-    - [游戏引擎](./rust/game_engine.md)
+    - [Extensibility：宏](./rust/macro.md)
 
 ---
 
@@ -46,6 +48,7 @@
     - [密码学与区块链](./industry/blockchain.md)
     - [分布式系统与云](./industry/cloud.md)
     - [SaaS 架构](./industry/saas.md)
+    - [游戏引擎](./rust/game_engine.md)
 
 ---
 

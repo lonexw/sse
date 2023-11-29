@@ -1,5 +1,16 @@
 # 能力扩展
 
+创业失败的破产工程师，我基本上算是没有面试经历，也没有参与太多的大型项目，所以我的思考可以辩证的来看，非经验之谈，而是一种思考框架。
+
+审视如何做软件，如何做人，如何生活。
+
+No LeetCode, no take-home assignments, etc.
+
+到了一定年龄，专注是克服时间本身的唯一途径。
+
+软件行业的细分岗位太多，我只探索了我想从事或者感兴趣的一些领域，有很多比如游戏开发，嵌入式开发我都兴趣较弱或者没有接触过，如果你感兴趣可以自行探索一下。
+
+
 1. #### 就业方向和能力拓展的前言内容提炼
 2. #### 数据库方向，资料整理和内容梳理
 3. #### AI + 区块链 + 金融科技，资料整理和内容梳理
@@ -43,3 +54,8 @@ you’re comfortable around the /sys and /dev directories and know how to get st
 数据的集成和连接工作
 
 Proven experience in building Rust applications, ideally with some experience of running it on embedded systems or interfacing with hardware.
+
+[Things Are Getting Rusty In Kernel Land](https://hackaday.com/2022/05/17/things-are-getting-rusty-in-kernel-land/)
+
+
+对设计和某些专业有更深的理解，综合性人才会更出色。MUI’s material design components

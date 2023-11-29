@@ -21,7 +21,7 @@ println!("Name: {}, Age: {}", name, age);
 let name = "Rust";
 name = "Rust Lang"; // Err 会编译出错
 ```
-在 Rust 中变量默认是 **🙅 不可变(immutable)**的，这可以带来两个好处：
+在 Rust 中变量默认是 🙅 **不可变(immutable)** 的，这可以带来两个好处：
 - 语言层级的安全性和简单并发性
 - 变量声明为不可变在运行期可以避免多余的 runtime 检查，提升性能
 
