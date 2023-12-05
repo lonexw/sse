@@ -23,11 +23,13 @@ Rust 是一门赋予每个人构建**可靠且高效软件能力**的语言，�
 
 用我的 Expound Note 或 figma 来输出图例；
 
+- 内存安全的重要性
 - Rust 使用**所有权和借用模型**来保证内存安全（Memory safety），同时也通过 unsafe 代码块来提供完全的灵活性，还没有 GC（Garbage Collector 垃圾回收机制）带来的性能损耗。
 - 为了让编译器（Compiler）深层次的理解你的代码，**强类型系统（Rich Type System）** 的支持就必不可少，编译器像你的老师或驾校教练，将更多的软件缺陷拦截在编译阶段。
     - 这是 Rust 的魔法 🪄：`Code doesen‘t compile.`, 不要让它成为你学习之路的拦路虎。
     - 在编译器的指导下，可以写更好、不会轻易 Crash（错误和边界处理） 的软件。
-- Rust 从函数式语言的重要特征学习了不少东西：基于 `表达式（expression-based）` 、函数闭包（Closures）与迭代器（Iterators）, 以及强大的枚举（无处不在的 Option），可以让你即拥有高级语言和功能，又不丢失低级语言的性能，而且这些都是零成本抽象的（Zero-Cost Abstract）：无需为这些抽象付出成本。
+    - 有点错误驱动开发的意思，让你自己也深刻理解你所写下的代码，像天才一样。
+- Rust 从函数式语言的重要特征学习了不少东西：基于 `表达式（expression-based）` 、函数闭包（Closures）与迭代器（Iterators）, 以及强大的枚举（无处不在的 Option 和 Result），可以让你即拥有高级语言和功能，又不丢失低级语言的性能，而且这些都是零成本抽象的（Zero-Cost Abstract）：无需为这些抽象付出成本。
 - 强大的 Macro System（宏系统）也带来一个好处：语言版本迭代带来的学习和迁移痛苦。
 - Rust 提供了完整的生态工具链和社区：
     - Cargo 依赖管理 📦 
@@ -44,18 +46,20 @@ Rust 是一门赋予每个人构建**可靠且高效软件能力**的语言，�
 
 #### 写出更好的代码
 
+好的代码要考虑诸多边缘条件以及不确定性，把这些知识都装进大脑或者期待人人训练有素是行不通的，Rust 提供的诸多功能来辅助你写出健壮、不会轻易奔溃的软件。
+
 - RELIABLE from the start
-    - NO UNUSED VARIABLES 
+    - NO UNUSED VARIABLES, VALUE AND POINTER MUST BE VALID
+    - 所有权和借用，你不会担心出现内存问题，并可以实现简单并发性
     - EXHAUSTIVE PATTERN MATCHING
     - ERRORS MUST BE HANDLED
-- Your Code WON'T Crash.
-- Rust  makes you feel like a genius, also unsafe code for you.
+- Your Code WON'T Crash 在运行中，Rust  makes you feel like a genius
 - PRODUCTIVE - Type System with Superpower
 - 缓解内卷（不只当螺丝钉）
 
 #### Rust 之难，不在于语言特性，而在于：
 
-- 实践中如何融会贯通的运用
+- 深层次理解核心理念，在实践中融会贯通的运用
 - 遇到了坑时（生命周期、借用错误，自引用等）如何迅速、正确的解决
 - 大量的标准库方法记忆及熟练使用，这些是保证开发效率的关键
 - 心智负担较重，特别是初中级阶段
@@ -90,9 +94,10 @@ Rust 是一门赋予每个人构建**可靠且高效软件能力**的语言，�
 
 #### 3）工程能力
 
+- The module system
 - 错误处理
 - 代码组织：Cargo、Package、Crates、注释及文档
-- 自动化测试
+- 自动化测试 https://www.youtube.com/watch?v=8XaVlL3lObQ
 
 Building & Package Management
 

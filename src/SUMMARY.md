@@ -32,7 +32,7 @@
 - [选择一把合适的剑 🗡️ ：Rust](./rust/intro.md)
     - [编程语言基础](./rust/basic_knowledge/intro.md)
         - [常见的编程概念](./rust/basic_knowledge/common_programming_concepts.md)
-        - [Vector、str、HashMap](./rust/basic_knowledge/common_collection.md)
+        - [常用的集合 Collections](./rust/basic_knowledge/common_collection.md)
         - [Design Code](./rust/basic_knowledge/design_code.md)
     - [理解所有权](./rust/ownership.md)
     - [错误处理 ❌](./rust/error_handled.md)

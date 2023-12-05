@@ -16,7 +16,7 @@
 
 #### 2）[常见的**集合 Collections**](./common_collection.md)
 
-集合就像装东西的容器，经常会用到。
+集合就像装数据的容器，经常会用到。
 
 #### 3）[用代码构建想法](./design_code.md)
 

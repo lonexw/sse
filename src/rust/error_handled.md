@@ -5,6 +5,8 @@
 - GOTO
 - You Can‘t fix NULLS，NO NULLS
 
+依赖于用文档去处理错误
+
 Railway Oriented Programming：
 https://fsharpforfunandprofit.com/rop/
 

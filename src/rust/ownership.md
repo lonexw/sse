@@ -2,6 +2,8 @@
 
 > ::A way to manage memory,::  you need fighting with the **borrow checker.**
 
+图书的抽象表达。
+
 ### Stack and Heap
 
 [理解Rust内存管理 - Rust入门秘籍](https://rust-book.junmajinlong.com/ch5/00.html)
@@ -16,7 +18,11 @@
 
 String and slice
 
+基本概念介绍：https://www.youtube.com/watch?v=TJTDTyNdJdY&list=PLZaoyhMXgBzozt1LeHkCv8ERUPxhXT1eE
+
+
 ### 借用（borrowing）
+
 
 **获取变量的引用，**常规引用是一个指针类型，指向了对象存储的内存地址。
 
@@ -31,6 +37,8 @@ String and slice
 **把结构体中具有所有权的字段转移出去后，将无法再访问该字段，但是可以正常访问其它的字段**。
 
 ## The Smart Pointer
+
+https://www.youtube.com/watch?v=CTTiaOo4cbY&list=PLZaoyhMXgBzozt1LeHkCv8ERUPxhXT1eE&index=2
 
 指针：a reference，指代包含内存地址的变量，这个地址被用于索引。
 
