@@ -36,6 +36,12 @@ Rust 是一门赋予每个人构建**可靠且高效软件能力**的语言，�
     - cargo fmt: 代码格式化 ｜ cargo clippy: 代码检查 🧐
     - cargo test: 单元测试、文档测试 ｜ cargo bench: 基础测试
     - rustup: Rust 安装、环境、版本切换等
+- 高级语言与低级语言
+    - 元编程、模板语言、处理器  <<< Macros 图灵完全
+        - 用 3D 打印机打印一个更好的打印机
+        - 重写覆盖、DSL 语言
+        - 在编译阶段运行、可以修改我们的源代码，即零成本抽象 ==> No Rust 2.0 & Long Compiler times
+    - Direct Hardware Access <<< Unsafe Rust: if you know what are you doing & 内存安全，提供的灵活性，不需要学习新的语言
 
 ### 🦀️ Rust 代表一种全新的编程之路
 

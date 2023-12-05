@@ -25,7 +25,7 @@
 
 ### 入门教程及书籍导读 📚
 
-官网文档：过一遍可以让对 Rust 有了解：
+**《Rust 程序语言设计》**：过一遍可以让对 Rust 有了解：
 
 - [英文版](https://doc.rust-lang.org/stable/book/title-page.html) ｜[中文版](https://kaisery.github.io/trpl-zh-cn/title-page.html) ｜ [互动学习版本](https://rust-book.cs.brown.edu) ｜ [视频版本](https://www.youtube.com/watch?v=OX9HJsJUDxA&list=PLai5B987bZ9CoVR-QEIN9foz4QCJ0H2Y8)｜本地离线版本：**rustup docs --book**
 - 相关领域： [Rust CLI](https://rust-cli.github.io/book/index.html) | [Wasm](https://rustwasm.github.io/docs/book/) | [Embedded](https://doc.rust-lang.org/embedded-book) | [The Rustonomicon](https://doc.rust-lang.org/nomicon/index.html) | [The Unstable Book](https://doc.rust-lang.org/nightly/unstable-book/index.html)
@@ -59,6 +59,7 @@ Rust 入门教程（仅记录，非推荐）：
 - https://www.oreilly.com/library/view/rust-programming-by/9781788390637/
 - https://www.youtube.com/@RustVideos
 
+📜 官方文档：
 > 任何时候，如果你拿不准标准库中的类型或函数的用途和用法，不要慌或只会 Google，请查阅应用程序接口（application programming interface，API）文档和源码可能更高效！
 - 常用的Rust标准库: [std - Rust](https://doc.rust-lang.org/std/)
 - Reference：https://doc.rust-lang.org/reference/index.html 

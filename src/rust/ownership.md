@@ -36,6 +36,8 @@ String and slice
 
 **把结构体中具有所有权的字段转移出去后，将无法再访问该字段，但是可以正常访问其它的字段**。
 
+https://www.youtube.com/watch?v=1QoT9fmPYr8
+
 ## The Smart Pointer
 
 https://www.youtube.com/watch?v=CTTiaOo4cbY&list=PLZaoyhMXgBzozt1LeHkCv8ERUPxhXT1eE&index=2
